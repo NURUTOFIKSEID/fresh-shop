@@ -1,4 +1,4 @@
-# Tofik Fresh market is a Fruit & Markets + <for more here is my link https://nurutofikseid.github.io/2017070098-nuru-tofik-seid/
+# [Tofik Fresh market is a Fruit & Markets](https://nurutofikseid-fresh-shop.glitch.me/)
  ## INTRODUCTION 
  Tofik Fresh market is a Fruit & Markets, formally known as Tofik Fresh Market, was established in November of 2019 by Tofik Seid in Addis Ababa ,Ethiopia.The original intent was to provide a place where people could shop for fresh fruits and vegetables all year long Through everything, our focus has remained the same. Provide our customers with the freshest cuts of meat and the best produce available. During the summer months, we buy from local farmers, this ensures the freshest fruits and vegetables for our customers. When local produce is not available, we send our own trucks to Detroit and Grand Rapids several times a week to bring the highest quality, fresh produce back for our customers. **
 ##  Technology
