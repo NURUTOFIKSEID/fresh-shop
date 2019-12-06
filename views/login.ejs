@@ -77,7 +77,7 @@
         <div class="container">
             <div class="my-account-page">
                 <h1 style="font-weight: bolder;font-size: 40px;margin-left: 20%;">Login</h1>
-                <form action="/login" method="post" style="margin: 0% 20%">
+                <form action="/users/login" method="post" style="margin: 0% 20%">
                     <div class="row">
                         <input style="margin-right:200px;" class="form-control" type="email" name="email" id="email"
                             required placeholder="User Email">
@@ -88,13 +88,11 @@
                     </div>
                     <div class="row" style="margin-top: 10px;">
                         <button type="submit" class="btn btn-lg btn-primary">Sign In</button>
-                        <a href="/register" style="text-decoration: none;color:white;padding:5px 90px;margin-left:10px"
+                        <a href="/users/register" style="text-decoration: none;color:white;padding:5px 90px;margin-left:10px"
                             class="btn btn-lg btn-secondary">Sign Up Here If Not Registered</a>
                     </div>
                     <div class= "row">
-                        <% if(messages.error){ %>
-                    <h1 style="padding:10px 10px;margin: 5px 0px; border:1px solid grey;border-radius: 5px; background: grey;color:white;" ><%= messages.error %></h1>
-                    <% } %>
+                        <%-include("./partials/messages")-%>
                     </div>
                 </form>
                 
