@@ -37,7 +37,7 @@
 
 <body>
     <!-- Start Main Top -->
-    
+
     <!-- End Main Top -->
 
     <!-- Start Main Top -->
@@ -64,8 +64,6 @@
                     <h2><%= user.name %></h2>
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Shop</a></li>
-                        <li class="breadcrumb-item"><a href="#">Shop</a></li>
-                        <li class="breadcrumb-item"><a href="#">Shop</a></li>
                         <li class="breadcrumb-item active"><%= user.name %></li>
                     </ul>
                 </div>
@@ -78,14 +76,20 @@
     <div class="my-account-box-main" style="background: transparent;">
         <div class="container">
             <div class="my-account-page">
-                <a href="/users/logout" class="btn btn-outline-primary" style="float: left;">Logout</a>
-                <a href="/setting" class="btn btn-outline-secondary" style="float: left;margin:0px">Settings</a>
-                <form action="/delete" method="post">
-                    <input type="text" class="form-control" name="id" value="<%= user._id %>" hidden>
-                    <button type="submit" class="btn btn-outline-danger"> Delete Account </button>
-                    
+                <div style="margin: 3% 24%;">
+                    <h2>Change Credentials</h2>
+                    <h2>Current Name: <span style="color:red;font-weight: 900;"><%= user.name %></span></h2>
+                    <h2>Current Email: <span style="color:red;font-weight: 900;"><%= user.email %></span></h2>
+                </div>
+                <form action="/edit" method="POST" style="margin: 3%  44% 3% 24%;">
+                    <input type="text" name="name" class="form-control" id="name" required placeholder="Edit Your Name">
+                    <input type="email" name="email" class="form-control" id="email" required
+                        placeholder="Edit Your Email">
+                    <input type="text" name="id" id="id" value="<%= user._id %>" hidden>
+                    <button type="submit" class="btn btn-outline-primary"> Save </button>
+                    <a href="/setting" class="btn btn-outline-primary"> Setting </a>
+                    <a href="/dashboard" class="btn btn-outline-primary"> Go back to user </a>
                 </form>
-                <h1 style="font-weight: bolder;font-size: 40px;margin-left: 20%;">Hello! <%= user.name %> Thank you for being a member of us</h2>
             </div>
         </div>
     </div>
